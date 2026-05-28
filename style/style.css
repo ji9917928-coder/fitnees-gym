@@ -129,6 +129,39 @@ display: none;
 
 }
 /* training section  */
+main>section{
+     max-width: 1200px;
+   
+    margin: 50px auto;
+}
+.grid-title>h1{
+    margin-bottom: 14px;
+}
+.grid-title{
+    width: 671px;
+}
+.grid-trining-title{
+    font-size:3rem;
+}
+.grid-title{
+
+}
+.box-2 .lorem,.ipsum,.dawon,.work{
+    left: 10px;
+    bottom: 10px;
+}
+.box-3 .long,.home{
+    right: 20px;
+    bottom: 10px;
+}
+.grid-cointainer>div>p{
+    position: absolute;
+    z-index: 1;
+  
+}
+.grid-cointainer>div{
+    position: relative;
+}
 .grid-cointainer{
     max-width: 1200px;
    
@@ -152,6 +185,14 @@ display: none;
 
 /* responsive designed */
 @media screen and (max-width:425px){
+    /* common section  */
+    .grid-title{
+        width: 353px;
+    }
+    body{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
 
     .menu-container{
         display: none;
@@ -218,6 +259,7 @@ display: none;
     top: 10%;
    
 }
+/* training section  */
 .grid-cointainer{
     grid-template-columns: repeat(2,1fr);
 
