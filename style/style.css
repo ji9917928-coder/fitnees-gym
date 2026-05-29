@@ -153,10 +153,41 @@ display: none;
 }
 .habits>img{
     margin-top: 50px;
-  width: 250px;
+  max-width: 250px;
   height: 250px;
   border-radius: 50%;
 }
+/* run section  */
+.believe{
+    margin-top: 14px;
+    margin-bottom: 36px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.run-div{
+    max-width: 343px;
+    margin-left: 20px;
+   
+}
+.join-now1btn{
+     width: 200px;
+     background-color: #E6533C;
+    height: 54px;
+    color: white;
+    border-radius: 47px;
+}
+.run-img>img{
+    border-radius: 20px;
+    max-width: 360px;
+    height: 300px;
+}
+.run-section{
+    border-radius: 13px;
+    display: flex;
+    padding: 24px;
+    background-color: rgba(77, 76, 76, 0.2);
+    justify-content: space-between;
+}
+
 /* training section  */
 main>section{
      max-width: 1200px;
@@ -169,7 +200,7 @@ main>section{
 .grid-title{
     max-width: 671px;
 }
-.grid-trining-title,.our-title,.habits-title{
+.grid-trining-title,.our-title,.habits-title,.run-title{
     font-size:3rem;
 }
 .grid-title{
@@ -337,6 +368,12 @@ padding: 10px;
     margin-bottom: 30px;
     text-align: center;
 }
+.run-div{
+    margin-bottom: 13px;
+}
+.run-section{
+    flex-direction: column;
+}
 .banner-container,.meet-trainer,.footer-0,footer{
     flex-direction: column;
 }
@@ -418,16 +455,19 @@ padding: 10px;
 }
 }
 @media screen and (min-width:425px) and (max-width:992px){
-    body{
-        margin-left: 10px;
-    }
+    
     .toltib{
     right: auto;
     left: 60%;
     top: 20%;
    
 }
-.grid-title,.title10{
+.habits>img{
+    
+  width:100%;
+ 
+}
+.grid-title,.title10,.habits-section{
    max-width: 100%;
 }
 }
