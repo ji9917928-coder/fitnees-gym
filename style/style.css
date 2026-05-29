@@ -29,7 +29,7 @@ nav>p{
 
 
 }
-nav>div{
+.menu-container{
     display: flex;
     border: 2px solid rgb(58, 54, 54);
     gap: 46px;
@@ -132,7 +132,7 @@ display: none;
 main>section{
      max-width: 1200px;
    
-    margin: 50px auto;
+    margin: 100px auto;
 }
 .grid-title>h1{
     margin-bottom: 14px;
@@ -140,21 +140,21 @@ main>section{
 .grid-title{
     width: 671px;
 }
-.grid-trining-title{
+.grid-trining-title,.our-title{
     font-size:3rem;
 }
 .grid-title{
 
 }
-.box-2 .lorem,.ipsum,.dawon,.work{
+.box-2 .lorem, .box-1 .ipsum, .box-4 .work, .box-6 .dawon{
     left: 10px;
     bottom: 10px;
 }
-.box-3 .long,.home{
+.box-3 .long, .box-5 .home{
     right: 20px;
     bottom: 10px;
 }
-.grid-cointainer>div>p{
+.grid-cointainer>div>p,.chaild-title{
     position: absolute;
     z-index: 1;
   
@@ -182,6 +182,93 @@ main>section{
     height: 100%;
     mix-blend-mode: multiply;
 }
+/* meet section  */
+.meet-chaild>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+   
+    
+    
+}
+.meet-chaild{
+    position: relative;
+}
+.chaild-title{
+    left: 10%;
+    top: 85%;
+}
+.meet-trainer,.title10{
+/* text-align: center; */
+}
+.title10{
+    width: 671px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 59px;
+   
+
+}
+
+.meet-trainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+   padding: 20px;
+   gap: 20px;
+   border-radius: 12px;
+    background-color: rgba(77, 76, 76, 0.2);
+    
+   
+}
+ /* footer section  */
+.footer-0{
+ max-width: 1200px;
+ display: flex;
+ margin: 0 auto;
+}
+ footer{
+   flex-direction: column;
+    margin: 0 auto;
+    padding-top: 50px;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+ }
+ .fitness-footer{
+    
+    width: 443px;
+    margin-right: 102px;
+ }
+ .Fitness1{
+    font-size: 3.37rem;
+    font-weight: 800;
+    color: #E6533C;
+    font-style: italic;
+    margin-bottom: 20px;
+ }
+ .grt-started{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 39px;
+ }
+ .fitness-footer2-p-p{
+    font-size: 1.4rem;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 20px;
+ }
+ .fitness-footer2{
+    width: 180px;
+    margin-right: 152px;
+ }
+ .fitness-footer3{
+   
+ }
+ small{
+display: block;
+
+ }
+
 
 /* responsive designed */
 @media screen and (max-width:425px){
@@ -201,10 +288,13 @@ main>section{
     margin-right: 5px;
     display: inline;
 }
-.banner-container{
+.banner-container,.meet-trainer{
     flex-direction: column;
 }
-.banner-right,.banner-left{
+.meet-trainer{
+    grid-template-columns: 1fr;
+}
+.banner-right,.banner-left,.title10{
     width: 100%;
 }
 .toltib{
@@ -273,6 +363,20 @@ main>section{
 
 .box-3,.box-6{
     display: none;
+}
+}
+@media screen and (min-width:425px) and (max-width:992px){
+    body{
+        margin-left: 10px;
+    }
+    .toltib{
+    right: auto;
+    left: 60%;
+    top: 20%;
+   
+}
+.grid-title,.title10{
+   max-width: 100%;
 }
 }
 
